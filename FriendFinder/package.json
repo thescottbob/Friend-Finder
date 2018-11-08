@@ -1,0 +1,20 @@
+{
+  "name": "friendfinder",
+  "version": "1.0.0",
+  "description": "Matches the user with the most compatible friend based on their answers to a short survey.",
+  "main": "server.js",
+  "scripts": {
+    "test": "findFriends",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thescottbob/Friend-Finder.git"
+  },
+  "author": "thescottbob",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thescottbob/Friend-Finder/issues"
+  },
+  "homepage": "https://github.com/thescottbob/Friend-Finder#readme"
+}
