@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Matches the user with the most compatible friend based on their answers to a short survey.",
   "main": "server.js",
+  "dependencies": { 
+    "express": "^4.16.4",
+    "path": "^0.12.7"
+ },
   "scripts": {
     "test": "findFriends",
     "start": "node server.js"
