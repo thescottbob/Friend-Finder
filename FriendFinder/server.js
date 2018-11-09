@@ -7,61 +7,13 @@ var path = require("path");
 // =============================================================
 var app = express();
 var PORT = process.env.PORT || 3000;
-var apiRoutes = ;
+// var apiRoutes = ;
 
 app.get('/', function (req, res) {
-    res.send('Hello World')
+    res.send('Hello World!')
   })
    
   app.listen(3000, function(){
     console.log("Listening on PORT: " + PORT);
   })
-
-  
-
-
-
-// Sets up the Express app to handle data parsing
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
-
-var tables = [
-    {
-        customerName: "Ahmed",
-        phoneNumber: "979-587-0887",
-        customerEmail: "afhaque89@gmail.com",
-        customerID: "afhaque89"
-    },
-    {
-        customerName: "test2",
-        phoneNumber: "979-587-0887",
-        customerEmail: "afhaque89@gmail.com",
-        customerID: "afhaque89"
-    },
-];
-var waitlist = [];
-
-app.get('/', function(req, res) {
-    res.sendFile(path.join(__dirname, "index.html"));
-});
-
-app.get("/api/tables", function(req, res) {
-    return res.json(tables);
-});
-
-app.get("/api/waitlist", function(req, res) {
-    return res.json(waitlist);
-});
-
-app.get('/tables', function(req, res) {
-    res.sendFile(path.join(__dirname, "tables.html"));
-});
-
-app.get('/reserve', function(req, res) {
-    res.sendFile(path.join(__dirname, "reserve.html"));
-});
-
-app.listen(PORT, function() {
-    console.log("App listening on PORT " + PORT);
-});
   
