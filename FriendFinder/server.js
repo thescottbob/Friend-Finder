@@ -7,13 +7,12 @@ var path = require("path");
 // =============================================================
 var app = express();
 var PORT = process.env.PORT || 3000;
-// var apiRoutes = ;
 
 app.get('/', function (req, res) {
     res.send('Hello World!')
   })
    
-  app.listen(3000, function(){
+  app.listen(PORT, function(){
     console.log("Listening on PORT: " + PORT);
   })
   
